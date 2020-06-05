@@ -13,18 +13,13 @@ $(document).ready(function () {
     $(this).hide();
   });
 
-  $(".team_sec").waypoint(function (direction) {
-    if (direction == "down") {
-      $("#sideBarNavOpen").addClass("text-dark");
-    } else {
-      $("#sideBarNavOpen").removeClass("text-dark");
-    }
-  });
-   $(".port_sec").waypoint(function (direction) {
-     if (direction == "up") {
-       $("#sideBarNavOpen").addClass("text-dark");
+   $(".service_sec").waypoint(function (direction) {
+     if (direction == "down") {
+       $(".navigation").addClass("fixed-top pure-dark");
      } else {
-       $("#sideBarNavOpen").removeClass("text-dark");
+       $(".navigation").removeClass("fixed-top pure-dark");
      }
    });
+
+
 });
